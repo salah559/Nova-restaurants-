@@ -1,6 +1,8 @@
 
 body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f0eb; color:#3e2f2f; }
 header { background:#6b4c3b; padding:20px; text-align:center; color:#fff; }
+.logo-container { display:flex; align-items:center; justify-content:center; gap:10px; }
+.logo { width:60px; height:auto; }
 nav a { color:#fff; margin:0 10px; text-decoration:none; transition:0.3s; }
 nav a:hover { color:#ffd699; }
 .hero, .menu-section, .reservation-section, .contact-section { padding:50px; text-align:center; }
@@ -11,3 +13,5 @@ footer { background:#3e2f2f; color:#fff; text-align:center; padding:10px; positi
 .menu-item { margin:20px; display:inline-block; text-align:center; }
 .menu-item img { width:200px; height:150px; object-fit:cover; transition:0.5s; }
 .menu-item img:hover { transform:scale(1.05); }
+.menu-item button { margin-top:10px; padding:8px 15px; background:#805b46; color:#fff; border:none; cursor:pointer; transition:0.3s; }
+.menu-item button:hover { background:#6b4c3b; }
