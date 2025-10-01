@@ -357,3 +357,71 @@ textarea {
   margin-left: 0;
   margin-right: 10px;
   }
+
+/* ألوان رئيسية */
+:root {
+  --brown-dark: #5a3825;   /* بني غامق */
+  --brown-light: #f5efe8;  /* بني فاتح */
+  --brown-accent: #805b46; /* بني متوسط للأزرار */
+}
+
+/* ستايل عام للفورم */
+#contact-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  background: var(--brown-light);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(90, 56, 37, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "Tajawal", sans-serif;
+}
+
+/* الحقول */
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--brown-dark);
+  border-radius: 8px;
+  background: #fff;
+  font-size: 15px;
+  color: var(--brown-dark);
+  transition: 0.3s ease;
+}
+
+/* تركيز على الحقول */
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: var(--brown-accent);
+  outline: none;
+  box-shadow: 0 0 6px rgba(128, 91, 70, 0.4);
+}
+
+/* زر الإرسال */
+#contact-form .btn {
+  background: var(--brown-accent);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#contact-form .btn:hover {
+  background: var(--brown-dark);
+  transform: translateY(-2px);
+}
+
+/* الرسالة */
+.success-msg {
+  color: var(--brown-dark);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
