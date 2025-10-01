@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservation - Nova Restaurant</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>Nova Restaurant</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<main>
+    <section class="reservation-section">
+        <h2>Book a Table</h2>
+        <form id="reservation-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="date" required>
+            <input type="time" required>
+            <input type="number" placeholder="Number of People" min="1" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="reservation-success" style="display:none;">Reservation submitted successfully!</p>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 Nova Restaurant</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
