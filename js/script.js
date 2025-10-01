@@ -1,22 +1,32 @@
 
-document.addEventListener('DOMContentLoaded', () => {
-    // ظهور العنوان بشكل سلس
-    const hero = document.querySelector('.hero h2');
-    if(hero){ hero.style.opacity = 0; setTimeout(() => { hero.style.transition='opacity 1.5s'; hero.style.opacity=1; }, 500); }
+document.addEventListener('DOMContentLoaded', ()=>{
+  let idx=0;
+  const slides = document.querySelectorAll('.carousel .slide');
+  if(slides.length){
+    slides.forEach(s=> s.style.display='none');
+    slides[0].style.display='inline-block';
+    setInterval(()=>{
+      slides.forEach(s=> s.style.display='none');
+      slides[idx].style.display='inline-block';
+      idx = (idx+1)%slides.length;
+    },3000);
+  }
 
-    // النماذج الوهمية
-    const reservationForm = document.getElementById('reservation-form');
-    if(reservationForm){
-        reservationForm.addEventListener('submit', e=>{ e.preventDefault(); document.getElementById('reservation-success').style.display='block'; });
-    }
-    const contactForm = document.getElementById('contact-form');
-    if(contactForm){
-        contactForm.addEventListener('submit', e=>{ e.preventDefault(); document.getElementById('contact-success').style.display='block'; });
-    }
-
-    // الطلب من قائمة الطعام وهميًا
-    const orderButtons = document.querySelectorAll('.menu-item button');
-    orderButtons.forEach(btn=>{
-        btn.addEventListener('click', ()=>{ alert('Order placed successfully! (Demo)'); });
+  const resForm = document.getElementById('reservation-form');
+  if(resForm){
+    resForm.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      document.getElementById('reservation-success').style.display='block';
+      setTimeout(()=>{ document.getElementById('reservation-success').style.display='none'; resForm.reset(); },2000);
     });
+  }
+
+  const contactForm = document.getElementById('contact-form');
+  if(contactForm){
+    contactForm.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      document.getElementById('contact-success').style.display='block';
+      setTimeout(()=>{ document.getElementById('contact-success').style.display='none'; contactForm.reset(); },2000);
+    });
+  }
 });
