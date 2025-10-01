@@ -10,7 +10,7 @@ if(menuContainer){
     menuItems.forEach(item=>{
         const div = document.createElement('div');
         div.classList.add('menu-item');
-        div.innerHTML=`<img src="images/placeholder.jpg" alt="${item.name}"><h3>${item.name}</h3><p>${item.desc}</p><p>${item.price}</p>`;
+        div.innerHTML=`<img src="images/placeholder.jpg" alt="${item.name}"><h3>${item.name}</h3><p>${item.desc}</p><p>${item.price}</p><button>Order Now</button>`;
         menuContainer.appendChild(div);
     });
 }

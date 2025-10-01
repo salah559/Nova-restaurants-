@@ -13,4 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if(contactForm){
         contactForm.addEventListener('submit', e=>{ e.preventDefault(); document.getElementById('contact-success').style.display='block'; });
     }
+
+    // الطلب من قائمة الطعام وهميًا
+    const orderButtons = document.querySelectorAll('.menu-item button');
+    orderButtons.forEach(btn=>{
+        btn.addEventListener('click', ()=>{ alert('Order placed successfully! (Demo)'); });
+    });
 });
