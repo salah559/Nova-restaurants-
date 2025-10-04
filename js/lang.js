@@ -15,7 +15,10 @@ const translations = {
     menu_title:'Our Menu',
     order_title:'Place Your Order', label_item:'Item', label_name:'Name', label_phone:'Phone', label_address:'Address', label_notes:'Notes', label_website:'Website (for demo client)', btn_submit:'Submit Order', order_success:'Order placed (demo). We\'ll contact you.',
     label_date:'Date', label_time:'Time', label_people:'People', res_title:'Book a Table', res_success:'Reservation submitted (demo).',
-    contact_title:'Contact Us', contact_phone:'Phone', contact_email:'Email', contact_address:'Address', contact_success:'Message sent (demo).'
+    contact_title:'Contact Us', contact_phone:'Phone', contact_email:'Email', contact_address:'Address', contact_success:'Message sent (demo).',
+    theme_toggle:'Toggle theme',
+    cart_title:'Shopping Cart', cart_empty:'Your cart is empty', cart_total:'Total:', cart_checkout:'Checkout', cart_remove:'Remove', cart_success:'Order placed successfully! We\'ll contact you soon.', cart_added:'Added to cart!',
+    search_placeholder:'Search menu...', filter_all:'All', filter_main:'Main Dishes', filter_dessert:'Desserts', filter_drinks:'Drinks', no_results:'No items found'
   },
   ar:{
     brand:'نوفا رستوران', tagline:'طعم طازج. أجواء دافئة.',
@@ -31,58 +34,70 @@ const translations = {
     menu_title:'قائمة الطعام',
     order_title:'أكمل طلبك', label_item:'الطبق', label_name:'الاسم', label_phone:'الهاتف', label_address:'المكان', label_notes:'ملاحظات', label_website:'موقع الويب (تجريبي)', btn_submit:'إرسال الطلب', order_success:'تم إرسال الطلب (تجريبي). سنتواصل معك.',
     label_date:'التاريخ', label_time:'الوقت', label_people:'عدد الأشخاص', res_title:'حجز طاولة', res_success:'تم إرسال الحجز (تجريبي).',
-    contact_title:'تواصل معنا', contact_phone:'الهاتف', contact_email:'البريد', contact_address:'العنوان', contact_success:'تم الإرسال (تجريبي).'
+    contact_title:'تواصل معنا', contact_phone:'الهاتف', contact_email:'البريد', contact_address:'العنوان', contact_success:'تم الإرسال (تجريبي).',
+    theme_toggle:'تبديل الوضع',
+    cart_title:'سلة التسوق', cart_empty:'سلة التسوق فارغة', cart_total:'المجموع:', cart_checkout:'إتمام الطلب', cart_remove:'إزالة', cart_success:'تم الطلب بنجاح! سنتواصل معك قريباً.', cart_added:'تمت الإضافة للسلة!',
+    search_placeholder:'ابحث في القائمة...', filter_all:'الكل', filter_main:'الأطباق الرئيسية', filter_dessert:'الحلويات', filter_drinks:'المشروبات', no_results:'لا توجد نتائج'
   },
   fr:{
     brand:'Restaurant Nova',
     tagline:'Goût frais. Endroit confortable.',
     nav_home:'Accueil', nav_menu:'Menu', nav_res:'Réservation', nav_contact:'Contact',
     hero_title:'Bienvenue au Restaurant Nova', hero_sub:'Savourez la saveur — commandez en ligne ou réservez une table.',
-    cta_order:'Commander', cta_book:'Réserver une table',
-    specials_title:'Spécialités du chef', dish1_name:'Poulet Grillé', dish1_desc:'Mariné aux herbes avec légumes rôtis.',
+    cta_order:'Commander', cta_book:'Réserver une Table',
+    specials_title:'Spécialités du Chef', dish1_name:'Poulet Grillé', dish1_desc:'Mariné aux herbes avec légumes rôtis.',
     dish2_name:'Steak de Bœuf', dish2_desc:'Steak juteux avec sauce du chef.',
     dish3_name:'Pâtes aux Légumes', dish3_desc:'Légumes de saison, sauce légère.',
-    offers_title:'Offres actuelles', about_title:'À propos', about_text:'Le Restaurant Nova apporte des saveurs fraîches et faites maison au quartier. Géré par une famille, avec des chefs passionnés.',
-    reviews_title:'Avis des clients', location_title:'Notre emplacement', location_text:'1234 Rue du Sahara, Alger (Emplacement de démo)',
+    offers_title:'Offres Actuelles', about_title:'À Propos', about_text:'Nova Restaurant apporte des saveurs fraîches et faites maison au quartier. Géré par une famille, chefs passionnés.',
+    reviews_title:'Ce que disent les clients', location_title:'Notre Emplacement', location_text:'1234 Rue Sahara, Alger (Lieu démo)',
     footer_phone:'Téléphone:', footer_email:'Email:',
     menu_title:'Notre Menu',
-    order_title:'Passez votre commande', label_item:'Article', label_name:'Nom', label_phone:'Téléphone', label_address:'Adresse', label_notes:'Notes', label_website:'Site web (démo)', btn_submit:'Envoyer la commande', order_success:'Commande passée (démo). Nous vous contacterons.',
-    label_date:'Date', label_time:'Heure', label_people:'Personnes', res_title:'Réserver une table', res_success:'Réservation envoyée (démo).',
-    contact_title:'Contactez-nous', contact_phone:'Téléphone', contact_email:'Email', contact_address:'Adresse', contact_success:'Message envoyé (démo).'
+    order_title:'Passez Votre Commande', label_item:'Article', label_name:'Nom', label_phone:'Téléphone', label_address:'Adresse', label_notes:'Notes', label_website:'Site Web (pour démo)', btn_submit:'Envoyer la Commande', order_success:'Commande envoyée (démo). Nous vous contacterons.',
+    label_date:'Date', label_time:'Heure', label_people:'Personnes', res_title:'Réserver une Table', res_success:'Réservation envoyée (démo).',
+    contact_title:'Contactez-Nous', contact_phone:'Téléphone', contact_email:'Email', contact_address:'Adresse', contact_success:'Message envoyé (démo).',
+    theme_toggle:'Basculer le thème',
+    cart_title:'Panier', cart_empty:'Votre panier est vide', cart_total:'Total:', cart_checkout:'Commander', cart_remove:'Retirer', cart_success:'Commande passée avec succès! Nous vous contacterons bientôt.', cart_added:'Ajouté au panier!',
+    search_placeholder:'Rechercher dans le menu...', filter_all:'Tous', filter_main:'Plats Principaux', filter_dessert:'Desserts', filter_drinks:'Boissons', no_results:'Aucun résultat'
   },
   es:{
     brand:'Restaurante Nova',
     tagline:'Sabor fresco. Lugar acogedor.',
     nav_home:'Inicio', nav_menu:'Menú', nav_res:'Reserva', nav_contact:'Contacto',
     hero_title:'Bienvenido al Restaurante Nova', hero_sub:'Saborea el sabor — pide en línea o reserva una mesa.',
-    cta_order:'Pedir ahora', cta_book:'Reservar mesa',
-    specials_title:'Especialidades del chef', dish1_name:'Pollo a la Parrilla', dish1_desc:'Marinado con hierbas y verduras asadas.',
+    cta_order:'Pedir Ahora', cta_book:'Reservar Mesa',
+    specials_title:'Especialidades del Chef', dish1_name:'Pollo a la Parrilla', dish1_desc:'Marinado con hierbas y vegetales asados.',
     dish2_name:'Bistec de Res', dish2_desc:'Bistec jugoso con salsa del chef.',
-    dish3_name:'Pasta de Verduras', dish3_desc:'Verduras de temporada, salsa ligera.',
-    offers_title:'Ofertas actuales', about_title:'Sobre nosotros', about_text:'El Restaurante Nova trae sabores frescos y caseros al vecindario. Gestionado por una familia, con chefs apasionados.',
-    reviews_title:'Opiniones de clientes', location_title:'Nuestra ubicación', location_text:'1234 Calle Sahara, Argel (Ubicación de demostración)',
+    dish3_name:'Pasta de Vegetales', dish3_desc:'Vegetales de temporada, salsa ligera.',
+    offers_title:'Ofertas Actuales', about_title:'Sobre Nosotros', about_text:'Restaurante Nova trae sabores frescos y caseros al vecindario. Familiar, chefs apasionados.',
+    reviews_title:'Lo que dicen los clientes', location_title:'Nuestra Ubicación', location_text:'1234 Calle Sahara, Argel (Ubicación demo)',
     footer_phone:'Teléfono:', footer_email:'Email:',
     menu_title:'Nuestro Menú',
-    order_title:'Haz tu pedido', label_item:'Artículo', label_name:'Nombre', label_phone:'Teléfono', label_address:'Dirección', label_notes:'Notas', label_website:'Sitio web (demo)', btn_submit:'Enviar pedido', order_success:'Pedido realizado (demo). Te contactaremos.',
-    label_date:'Fecha', label_time:'Hora', label_people:'Personas', res_title:'Reservar una mesa', res_success:'Reserva enviada (demo).',
-    contact_title:'Contáctanos', contact_phone:'Teléfono', contact_email:'Email', contact_address:'Dirección', contact_success:'Mensaje enviado (demo).'
+    order_title:'Realiza Tu Pedido', label_item:'Artículo', label_name:'Nombre', label_phone:'Teléfono', label_address:'Dirección', label_notes:'Notas', label_website:'Sitio Web (para demo)', btn_submit:'Enviar Pedido', order_success:'Pedido realizado (demo). Te contactaremos.',
+    label_date:'Fecha', label_time:'Hora', label_people:'Personas', res_title:'Reservar una Mesa', res_success:'Reserva enviada (demo).',
+    contact_title:'Contáctanos', contact_phone:'Teléfono', contact_email:'Email', contact_address:'Dirección', contact_success:'Mensaje enviado (demo).',
+    theme_toggle:'Cambiar tema',
+    cart_title:'Carrito', cart_empty:'Tu carrito está vacío', cart_total:'Total:', cart_checkout:'Finalizar', cart_remove:'Eliminar', cart_success:'¡Pedido realizado con éxito! Te contactaremos pronto.', cart_added:'¡Agregado al carrito!',
+    search_placeholder:'Buscar en el menú...', filter_all:'Todos', filter_main:'Platos Principales', filter_dessert:'Postres', filter_drinks:'Bebidas', no_results:'No se encontraron resultados'
   },
   de:{
-    brand:'Restaurant Nova',
+    brand:'Nova Restaurant',
     tagline:'Frischer Geschmack. Gemütlicher Ort.',
     nav_home:'Startseite', nav_menu:'Speisekarte', nav_res:'Reservierung', nav_contact:'Kontakt',
-    hero_title:'Willkommen im Restaurant Nova', hero_sub:'Genießen Sie den Geschmack — online bestellen oder einen Tisch reservieren.',
-    cta_order:'Jetzt bestellen', cta_book:'Tisch reservieren',
-    specials_title:'Spezialitäten des Küchenchefs', dish1_name:'Gegrilltes Hähnchen', dish1_desc:'Mit Kräutern mariniert und geröstetem Gemüse.',
+    hero_title:'Willkommen im Nova Restaurant', hero_sub:'Genießen Sie den Geschmack — online bestellen oder Tisch reservieren.',
+    cta_order:'Jetzt Bestellen', cta_book:'Tisch Reservieren',
+    specials_title:'Spezialitäten des Chefs', dish1_name:'Gegrilltes Hähnchen', dish1_desc:'Mit Kräutern mariniert und geröstetem Gemüse.',
     dish2_name:'Rindersteak', dish2_desc:'Saftiges Steak mit Chef-Sauce.',
     dish3_name:'Gemüse-Pasta', dish3_desc:'Saisonales Gemüse, leichte Sauce.',
-    offers_title:'Aktuelle Angebote', about_title:'Über uns', about_text:'Das Restaurant Nova bringt frische, hausgemachte Aromen in die Nachbarschaft. Familiengeführt, mit leidenschaftlichen Köchen.',
-    reviews_title:'Kundenmeinungen', location_title:'Unser Standort', location_text:'1234 Sahara Straße, Algier (Demo-Standort)',
-    footer_phone:'Telefon:', footer_email:'E-Mail:',
+    offers_title:'Aktuelle Angebote', about_title:'Über Uns', about_text:'Nova Restaurant bringt frische, hausgemachte Aromen in die Nachbarschaft. Familiengeführt, leidenschaftliche Köche.',
+    reviews_title:'Was Kunden sagen', location_title:'Unser Standort', location_text:'1234 Sahara Straße, Algier (Demo-Standort)',
+    footer_phone:'Telefon:', footer_email:'Email:',
     menu_title:'Unsere Speisekarte',
-    order_title:'Ihre Bestellung', label_item:'Artikel', label_name:'Name', label_phone:'Telefon', label_address:'Adresse', label_notes:'Notizen', label_website:'Website (Demo)', btn_submit:'Bestellung senden', order_success:'Bestellung aufgegeben (Demo). Wir kontaktieren Sie.',
-    label_date:'Datum', label_time:'Uhrzeit', label_people:'Personen', res_title:'Einen Tisch reservieren', res_success:'Reservierung gesendet (Demo).',
-    contact_title:'Kontaktieren Sie uns', contact_phone:'Telefon', contact_email:'E-Mail', contact_address:'Adresse', contact_success:'Nachricht gesendet (Demo).'
+    order_title:'Ihre Bestellung Aufgeben', label_item:'Artikel', label_name:'Name', label_phone:'Telefon', label_address:'Adresse', label_notes:'Notizen', label_website:'Webseite (für Demo)', btn_submit:'Bestellung Senden', order_success:'Bestellung aufgegeben (Demo). Wir kontaktieren Sie.',
+    label_date:'Datum', label_time:'Zeit', label_people:'Personen', res_title:'Tisch Reservieren', res_success:'Reservierung gesendet (Demo).',
+    contact_title:'Kontaktieren Sie Uns', contact_phone:'Telefon', contact_email:'Email', contact_address:'Adresse', contact_success:'Nachricht gesendet (Demo).',
+    theme_toggle:'Thema wechseln',
+    cart_title:'Warenkorb', cart_empty:'Ihr Warenkorb ist leer', cart_total:'Gesamt:', cart_checkout:'Zur Kasse', cart_remove:'Entfernen', cart_success:'Bestellung erfolgreich aufgegeben! Wir werden Sie bald kontaktieren.', cart_added:'Zum Warenkorb hinzugefügt!',
+    search_placeholder:'Speisekarte durchsuchen...', filter_all:'Alle', filter_main:'Hauptgerichte', filter_dessert:'Desserts', filter_drinks:'Getränke', no_results:'Keine Ergebnisse gefunden'
   },
   tr:{
     brand:'Nova Restoran',
@@ -90,84 +105,117 @@ const translations = {
     nav_home:'Ana Sayfa', nav_menu:'Menü', nav_res:'Rezervasyon', nav_contact:'İletişim',
     hero_title:'Nova Restorana Hoş Geldiniz', hero_sub:'Lezzeti tadın — online sipariş verin veya masa ayırtın.',
     cta_order:'Şimdi Sipariş Ver', cta_book:'Masa Ayırt',
-    specials_title:'Şefin Özel Yemekleri', dish1_name:'Izgara Tavuk', dish1_desc:'Otlu marine edilmiş ve kavrulmuş sebzeler.',
-    dish2_name:'Dana Biftek', dish2_desc:'Şef sosuyla sulu biftek.',
-    dish3_name:'Sebzeli Makarna', dish3_desc:'Mevsim sebzeleri, hafif sos.',
+    specials_title:'Şefin Özel Yemekleri', dish1_name:'Izgara Tavuk', dish1_desc:'Otlu marine edilmiş kızarmış sebzeler ile.',
+    dish2_name:'Sığır Biftek', dish2_desc:'Şef sosu ile sulu biftek.',
+    dish3_name:'Sebze Makarna', dish3_desc:'Mevsim sebzeleri, hafif sos.',
     offers_title:'Güncel Teklifler', about_title:'Hakkımızda', about_text:'Nova Restoran mahalleye taze, ev yapımı lezzetler getiriyor. Aile işletmesi, tutkulu şefler.',
-    reviews_title:'Müşteri yorumları', location_title:'Konumumuz', location_text:'1234 Sahara Caddesi, Cezayir (Demo konum)',
-    footer_phone:'Telefon:', footer_email:'E-posta:',
+    reviews_title:'Müşteriler ne diyor', location_title:'Konumumuz', location_text:'1234 Sahara Caddesi, Cezayir (Demo konum)',
+    footer_phone:'Telefon:', footer_email:'Email:',
     menu_title:'Menümüz',
-    order_title:'Siparişinizi Verin', label_item:'Ürün', label_name:'İsim', label_phone:'Telefon', label_address:'Adres', label_notes:'Notlar', label_website:'Web sitesi (demo)', btn_submit:'Sipariş Gönder', order_success:'Sipariş verildi (demo). Sizinle iletişime geçeceğiz.',
-    label_date:'Tarih', label_time:'Saat', label_people:'Kişi Sayısı', res_title:'Masa Ayırtın', res_success:'Rezervasyon gönderildi (demo).',
-    contact_title:'Bize Ulaşın', contact_phone:'Telefon', contact_email:'E-posta', contact_address:'Adres', contact_success:'Mesaj gönderildi (demo).'
+    order_title:'Siparişinizi Verin', label_item:'Ürün', label_name:'İsim', label_phone:'Telefon', label_address:'Adres', label_notes:'Notlar', label_website:'Web Sitesi (demo için)', btn_submit:'Sipariş Gönder', order_success:'Sipariş verildi (demo). Sizinle iletişime geçeceğiz.',
+    label_date:'Tarih', label_time:'Saat', label_people:'Kişi Sayısı', res_title:'Masa Ayırt', res_success:'Rezervasyon gönderildi (demo).',
+    contact_title:'Bize Ulaşın', contact_phone:'Telefon', contact_email:'Email', contact_address:'Adres', contact_success:'Mesaj gönderildi (demo).',
+    theme_toggle:'Tema değiştir',
+    cart_title:'Sepet', cart_empty:'Sepetiniz boş', cart_total:'Toplam:', cart_checkout:'Sipariş Ver', cart_remove:'Kaldır', cart_success:'Sipariş başarıyla verildi! Kısa süre içinde sizinle iletişime geçeceğiz.', cart_added:'Sepete eklendi!',
+    search_placeholder:'Menüde ara...', filter_all:'Tümü', filter_main:'Ana Yemekler', filter_dessert:'Tatlılar', filter_drinks:'İçecekler', no_results:'Sonuç bulunamadı'
   }
 };
 
-const languages = {
-  en: { name: 'English', flag: '🇬🇧', dir: 'ltr' },
-  ar: { name: 'العربية', flag: '🇸🇦', dir: 'rtl' },
-  fr: { name: 'Français', flag: '🇫🇷', dir: 'ltr' },
-  es: { name: 'Español', flag: '🇪🇸', dir: 'ltr' },
-  de: { name: 'Deutsch', flag: '🇩🇪', dir: 'ltr' },
-  tr: { name: 'Türkçe', flag: '🇹🇷', dir: 'ltr' }
-};
+const languages = [
+  { code: 'en', name: 'English', flag: '🇬🇧' },
+  { code: 'ar', name: 'العربية', flag: '🇸🇦' },
+  { code: 'fr', name: 'Français', flag: '🇫🇷' },
+  { code: 'es', name: 'Español', flag: '🇪🇸' },
+  { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+  { code: 'tr', name: 'Türkçe', flag: '🇹🇷' }
+];
 
 function applyLang(lang){
-  if(!translations[lang]) lang = 'en';
-  
   document.documentElement.setAttribute('data-lang', lang);
   document.documentElement.lang = lang;
-  document.documentElement.dir = languages[lang]?.dir || 'ltr';
   
-  document.querySelectorAll('[data-i18n]').forEach(el=>{
-    const key = el.getAttribute('data-i18n');
-    if(translations[lang] && translations[lang][key]) el.innerText = translations[lang][key];
-  });
-  
-  const currentBtn = document.querySelector('.lang-current');
-  if(currentBtn){
-    currentBtn.innerHTML = `${languages[lang].flag} <span class="lang-name">${languages[lang].name}</span> <span class="lang-arrow">▼</span>`;
+  if(lang === 'ar') {
+    document.documentElement.dir = 'rtl';
+  } else {
+    document.documentElement.dir = 'ltr';
   }
+  
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if(translations[lang] && translations[lang][key]) {
+      el.innerText = translations[lang][key];
+    }
+  });
+  
+  updateLanguageSelector(lang);
 }
 
-function initLanguageSelector(){
-  const langSelector = document.querySelector('.lang-selector');
-  if(!langSelector) return;
+function updateLanguageSelector(lang) {
+  const currentLang = languages.find(l => l.code === lang);
+  if (!currentLang) return;
   
-  const currentBtn = langSelector.querySelector('.lang-current');
-  const dropdown = langSelector.querySelector('.lang-dropdown');
-  
-  if(!currentBtn || !dropdown) return;
-  
-  currentBtn.addEventListener('click', (e)=>{
-    e.stopPropagation();
-    langSelector.classList.toggle('active');
+  const langCurrentBtns = document.querySelectorAll('.lang-current');
+  langCurrentBtns.forEach(btn => {
+    const nameSpan = btn.querySelector('.lang-name');
+    if (nameSpan) {
+      btn.childNodes[0].textContent = currentLang.flag + ' ';
+      nameSpan.textContent = currentLang.name;
+    }
   });
+}
+
+function createLanguageDropdown() {
+  const langDropdowns = document.querySelectorAll('.lang-dropdown');
   
-  document.addEventListener('click', ()=>{
-    langSelector.classList.remove('active');
-  });
-  
-  Object.keys(languages).forEach(langCode => {
-    const option = document.createElement('div');
-    option.className = 'lang-option';
-    option.setAttribute('data-lang', langCode);
-    option.innerHTML = `${languages[langCode].flag} <span>${languages[langCode].name}</span>`;
+  langDropdowns.forEach(dropdown => {
+    dropdown.innerHTML = '';
     
-    option.addEventListener('click', (e)=>{
-      e.stopPropagation();
-      applyLang(langCode);
-      localStorage.setItem('nova_lang', langCode);
-      langSelector.classList.remove('active');
-      window.dispatchEvent(new Event('nova-lang-changed'));
+    languages.forEach(lang => {
+      const langOption = document.createElement('button');
+      langOption.className = 'lang-option';
+      langOption.innerHTML = `${lang.flag} <span>${lang.name}</span>`;
+      langOption.dataset.lang = lang.code;
+      
+      langOption.addEventListener('click', (e) => {
+        e.stopPropagation();
+        applyLang(lang.code);
+        localStorage.setItem('nova_lang', lang.code);
+        
+        const selector = langOption.closest('.lang-selector');
+        if (selector) {
+          selector.classList.remove('active');
+        }
+        
+        window.dispatchEvent(new Event('nova-lang-changed'));
+      });
+      
+      dropdown.appendChild(langOption);
     });
-    
-    dropdown.appendChild(option);
   });
 }
 
-document.addEventListener('DOMContentLoaded', ()=>{
+document.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('nova_lang') || 'en';
+  
+  createLanguageDropdown();
   applyLang(saved);
-  initLanguageSelector();
+  
+  const langCurrentBtns = document.querySelectorAll('.lang-current');
+  langCurrentBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const selector = btn.closest('.lang-selector');
+      if (selector) {
+        selector.classList.toggle('active');
+      }
+    });
+  });
+  
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.lang-selector')) {
+      document.querySelectorAll('.lang-selector').forEach(selector => {
+        selector.classList.remove('active');
+      });
+    }
+  });
 });
